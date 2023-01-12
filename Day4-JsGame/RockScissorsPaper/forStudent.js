@@ -1,6 +1,6 @@
 const img = document.querySelector("#answer");
 
-const select = [undefined]; // select라는 배열에는 [undefined] or [-1] or [0] or [1]만 들어가게 된다. 
+const select = [undefined]; // select라는 배열에는 [undefined] or [-1] or [0] or [1]만 들어가게 된다.
 const scissorAnswer = -1; // -1은 가위를 의미
 const rockAnswer = 0; // 0은 바위를 의미
 const paperAnswer = 1; // 1은 보자기를 의미
@@ -77,7 +77,7 @@ const countdownSubmit = () => {
 scissor.addEventListener("click", scissorSelect); // 가위 카드 클릭시 scissorSelect 함수 실행하는 이벤트 등록
 rock.addEventListener("click", rockSelect); // 바위 카드 클릭시 scissorSelect 함수 실행하는 이벤트 등록
 paper.addEventListener("click", paperSelect); // 보자기 카드 클릭시 scissorSelect 함수 실행하는 이벤트 등록
-countdown.addEventListener("click", countdownSubmit); // Ready text 클릭시 countdownSubmit 함수 실행하는 이벤트 등록 
+countdown.addEventListener("click", countdownSubmit); // Ready text 클릭시 countdownSubmit 함수 실행하는 이벤트 등록
 
 const numToDetail = (num) => { // -1, 0, 1을 가위, 바위, 보자기로 변환해주는 함수
     return num == -1 ? "가위"
@@ -105,20 +105,40 @@ const changeIMG = (answer) => { // randomNumber로부터 정해진 answer, 즉 �
     }
 };
 
-const randomNumber = (n, m) => { // n부터 m까지의 랜덤한 숫자를 만드는 난수 발생 함수를 만드세요! return 타입은 INT입니다!
-	/* 
-     * n에는 시작 값이 들어오고, m에는 끝 값이 들어오게 되며
-     * n~m까지의 난수를 발생시키는 random 함수를 만드세요! (Tip. 2일차 JavaScript 기초 파일의 27페이지를 확인해보세요!)
-     * return 타입은 정수 타입인 INT입니다!
-     */
+const randomNumber = (n, m) => {
+    let rand1 = Math.floor(Math.random() *(m-n+1)) + n;
+    return rand1
 };
 
-const judge = (answer, submit) => { // 결과를 "Draw", "Lose", "Win" 형태로 도출하여 String의 형태로 return하세요!
-	/* 
-     * 가위 = -1, 바위 = 0, 보자기 = 1 입니다.
-     * answer에는 상대편 카드로는 -1, 0, 1 중 하나의 값이 들어옵니다.
-     * submit에는 자신이 선택한 카드에 따라 -1, 0, 1 중 하나의 값이 들어옵니다.
-     * answser와 submit의 값을 비교하여 자신이 비겼는지, 졌는지, 이겼는지 판단하는 함수를 만드세요! 
-     * return 타입은 문자열인 String이며, "Draw", "Lose", "Win" 중 하나로 return되게 하면 됩니다!
-     */
+const judge = (answer, submit) => {
+  int.com, me;
+  int win = 0;
+  int draw = 0;
+  int lose = 0;
+  int check = 0;
+  srand(time(NULL));
+
+  while (1) {
+          com = rand() % -1 + 1;
+          printf("가위(-1), 바위(0), 보(1) 중 하나를 입력하세요 ");
+          if (me == 0) {
+                  printf("종료합니다. /n 총 전적 : %d 승 %d 무 %d 패/n", win, draw, lose);
+                  if (me < -1 / me > 1) {
+                          printf("입력 오류! -1에서 1까지의 숫자만 입력해주세요/n/n")
+                          continue;
+                  }
+          if (com == -1) {
+                  chcom = "가위";
+                  if (me == 0) {
+                          chme = "바위";
+                          check = -1; {
+                            
+                          }
+
+
+                  }
+          }
+          }
+
+  }
 };
